@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "882760147503",
+    "firebase_url": "https://embedded-150610.firebaseio.com",
+    "project_id": "embedded-150610",
+    "storage_bucket": "embedded-150610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882760147503:android:b53f1322e0110883",
+        "android_client_info": {
+          "package_name": "com.example.netapp.embedded"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882760147503-3jrnntv4dg60js1d03o6si5fp6s4es7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0BjsunFVDI6s875V1vCEikG8_c8pwjaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
