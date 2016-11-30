@@ -82,9 +82,15 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.switch4:
                         if (isCheck) {
                             //TODO: Turn off Plug ALl
-                            sendLEDToServer(LED_No_ALL, "ON");
+                            //sendLEDToServer(LED_No_ALL, "ON");
+                            concent_1.setChecked(true);
+                            concent_2.setChecked(true);
+                            concent_3.setChecked(true);
                         } else {
-                            sendLEDToServer(LED_No_ALL, "OFF");
+                            //sendLEDToServer(LED_No_ALL, "OFF");
+                            concent_1.setChecked(false);
+                            concent_2.setChecked(false);
+                            concent_3.setChecked(false);
                         }
                         break;
                 }
