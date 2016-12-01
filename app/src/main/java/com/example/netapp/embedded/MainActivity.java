@@ -3,14 +3,9 @@ package com.example.netapp.embedded;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
-import android.transition.Explode;
-=======
->>>>>>> origin/master
 import android.util.Log;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -28,21 +23,15 @@ public class MainActivity extends AppCompatActivity {
     Switch concent_2;
     Switch concent_3;
     Switch concent_All;
-<<<<<<< HEAD
+
     public String[] data = new String[2];
-=======
->>>>>>> origin/master
+
 
     public String LED_No_1 = "No_1";
     public String LED_No_2 = "No_2";
     public String LED_No_3 = "No_3";
-<<<<<<< HEAD
 
     boolean isAll = false;
-=======
-    public String LED_No_ALL = "No_ALL";
->>>>>>> origin/master
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.switch4:
                         if (isCheck) {
                             //TODO: Turn off Plug ALl
-<<<<<<< HEAD
                             isAll = true;
                             concent_1.setChecked(true);
                             concent_2.setChecked(true);
@@ -107,17 +95,6 @@ public class MainActivity extends AppCompatActivity {
                             concent_2.setChecked(false);
                             concent_3.setChecked(false);
                             isAll = false;
-=======
-                            //sendLEDToServer(LED_No_ALL, "ON");
-                            concent_1.setChecked(true);
-                            concent_2.setChecked(true);
-                            concent_3.setChecked(true);
-                        } else {
-                            //sendLEDToServer(LED_No_ALL, "OFF");
-                            concent_1.setChecked(false);
-                            concent_2.setChecked(false);
-                            concent_3.setChecked(false);
->>>>>>> origin/master
                         }
                         break;
                 }
@@ -145,12 +122,6 @@ public class MainActivity extends AppCompatActivity {
             StringBuffer buffer = new StringBuffer();
             buffer.append("LED_NO").append("=").append(LED_No).append("&");
             buffer.append("STATE").append("=").append(state);
-<<<<<<< HEAD
-=======
-
-            Log.e(TAG, LED_No);
-            Log.e(TAG, state);
->>>>>>> origin/master
             Log.e(TAG, buffer.toString());
 
 
@@ -167,17 +138,12 @@ public class MainActivity extends AppCompatActivity {
             }
             String Result = builder.toString();
             Log.e(TAG, Result);
-<<<<<<< HEAD
             returnString(Result);
-=======
-            ((TextView)(findViewById(R.id.textView))).setText(Result);
-            Toast.makeText(MainActivity.this, "전송 후 결과 받음", Toast.LENGTH_SHORT).show();
->>>>>>> origin/master
+
         }
         catch (MalformedURLException e) {}
         catch (IOException e) {}
     }
-<<<<<<< HEAD
     private void returnString(String result) {
         String[] tempString = result.split("&");
 
@@ -221,6 +187,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-=======
->>>>>>> origin/master
 }

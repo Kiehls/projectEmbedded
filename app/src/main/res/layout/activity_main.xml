@@ -13,7 +13,6 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:text="Controll Multiple-tap"
             android:id="@+id/textView"
             android:textSize="20dp"
@@ -54,42 +53,6 @@
                 android:layout_marginTop="72dp"
                 android:checked="false"
                 android:layout_below="@+id/switch3"
-=======
-            android:text="FIrebase Test"
-            android:id="@+id/textView"
-            android:textSize="20dp"
-            android:layout_marginTop="42dp"
-            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true">
-        <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Concent_1"
-                android:id="@+id/switch1"
-                android:checked="false"
-                android:layout_marginTop="40dp"
-                android:layout_alignParentTop="true" android:layout_alignStart="@+id/switch2"/>
-        <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Concent_2"
-                android:id="@+id/switch2"
-                android:checked="false"
-                android:layout_below="@+id/switch1" android:layout_alignStart="@+id/switch3"
-                android:layout_marginTop="64dp"/>
-        <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Concent_3"
-                android:id="@+id/switch3"
-                android:checked="false"
-                android:layout_marginStart="45dp"
-                android:layout_below="@+id/switch2" android:layout_alignParentStart="true"
-                android:layout_marginTop="70dp"/>
-        <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Concent_all"
-                android:id="@+id/switch4"
-                android:layout_marginTop="72dp" android:checked="false" android:layout_below="@+id/switch3"
->>>>>>> origin/master
                 android:layout_alignStart="@+id/switch3"/>
     </RelativeLayout>
 </RelativeLayout>

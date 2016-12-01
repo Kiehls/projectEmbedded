@@ -17,11 +17,9 @@ import com.google.firebase.messaging.RemoteMessage;
 public class FirebaseMessageService extends com.google.firebase.messaging.FirebaseMessagingService {
     private static final String TAG = "FirebaseMsgServicess";
 
-    // [START receive_message]
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
 
-        //추가한것
         Log.e(TAG, "FirbaseMessage Started");
         sendNotification(remoteMessage.getData().get("message"));
     }
@@ -36,11 +34,7 @@ public class FirebaseMessageService extends com.google.firebase.messaging.Fireba
         Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
-<<<<<<< HEAD
                 .setContentTitle("Remote Controll")
-=======
-                .setContentTitle("Shuting Down Power")
->>>>>>> origin/master
                 .setContentText(messageBody)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
